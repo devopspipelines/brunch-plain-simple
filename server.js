@@ -11,4 +11,5 @@ app.get('*', (req, res) => res.sendFile('index.html', { root: basedir }))
 
 // Start listening
 app.listen(port)
+module.exports = app;
 console.log(`Server started at port ${port}`)
